@@ -11266,42 +11266,42 @@ var _user$project$Main$view = function (model) {
 			_1: {
 				ctor: '::',
 				_0: A2(
-					_elm_lang$html$Html$h2,
-					{ctor: '[]'},
+					_elm_lang$html$Html$a,
 					{
 						ctor: '::',
-						_0: _elm_lang$html$Html$text('Click to toggle state!'),
+						_0: _elm_lang$html$Html_Attributes$href('https://github.com/franckverrot/game-of-life-in-elm'),
+						_1: {ctor: '[]'}
+					},
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html$text('Source code on GitHub'),
 						_1: {ctor: '[]'}
 					}),
 				_1: {
 					ctor: '::',
-					_0: _user$project$Main$showBoard(model.board),
+					_0: A2(
+						_elm_lang$html$Html$h2,
+						{ctor: '[]'},
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html$text('Click to toggle state!'),
+							_1: {ctor: '[]'}
+						}),
 					_1: {
 						ctor: '::',
-						_0: A2(
-							_elm_lang$html$Html$button,
-							{
-								ctor: '::',
-								_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$StepOver),
-								_1: {ctor: '[]'}
-							},
-							{
-								ctor: '::',
-								_0: _elm_lang$html$Html$text('Next'),
-								_1: {ctor: '[]'}
-							}),
+						_0: _user$project$Main$showBoard(model.board),
 						_1: {
 							ctor: '::',
 							_0: A2(
 								_elm_lang$html$Html$button,
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$Pause),
+									_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$StepOver),
 									_1: {ctor: '[]'}
 								},
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html$text('Pause'),
+									_0: _elm_lang$html$Html$text('Next'),
 									_1: {ctor: '[]'}
 								}),
 							_1: {
@@ -11310,12 +11310,12 @@ var _user$project$Main$view = function (model) {
 									_elm_lang$html$Html$button,
 									{
 										ctor: '::',
-										_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$Reset),
+										_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$Pause),
 										_1: {ctor: '[]'}
 									},
 									{
 										ctor: '::',
-										_0: _elm_lang$html$Html$text('Reset'),
+										_0: _elm_lang$html$Html$text('Pause'),
 										_1: {ctor: '[]'}
 									}),
 								_1: {
@@ -11324,15 +11324,30 @@ var _user$project$Main$view = function (model) {
 										_elm_lang$html$Html$button,
 										{
 											ctor: '::',
-											_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$Run),
+											_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$Reset),
 											_1: {ctor: '[]'}
 										},
 										{
 											ctor: '::',
-											_0: _elm_lang$html$Html$text('Run'),
+											_0: _elm_lang$html$Html$text('Reset'),
 											_1: {ctor: '[]'}
 										}),
-									_1: {ctor: '[]'}
+									_1: {
+										ctor: '::',
+										_0: A2(
+											_elm_lang$html$Html$button,
+											{
+												ctor: '::',
+												_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$Run),
+												_1: {ctor: '[]'}
+											},
+											{
+												ctor: '::',
+												_0: _elm_lang$html$Html$text('Run'),
+												_1: {ctor: '[]'}
+											}),
+										_1: {ctor: '[]'}
+									}
 								}
 							}
 						}

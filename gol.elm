@@ -122,6 +122,7 @@ showBoard board =
 view : Model -> Html Msg
 view model =
   div [] [ h1 [] [text "Game of Life"]
+         , a [ href "https://github.com/franckverrot/game-of-life-in-elm"] [text "Source code on GitHub"]
          , h2 [] [text "Click to toggle state!"]
          , showBoard model.board
          , button [StepOver |> onClick] [text "Next"]
